@@ -1,1 +1,32 @@
 html,body{overflow-x:hidden}
+body{padding-bottom:36px}
+
+/* The photographed logo reads as a deliberate sign rather than a pasted rectangle. */
+.brand{width:132px;height:52px;padding:3px;background:#fffaf0;border:1px solid rgba(86,53,31,.28);border-radius:15px;box-shadow:3px 3px 0 rgba(37,155,155,.38);overflow:hidden;transform:rotate(-1deg)}
+.brand img{object-fit:cover;border-radius:11px}
+footer img{width:168px;padding:4px;background:#fffaf0;border:1px solid rgba(86,53,31,.25);border-radius:19px;box-shadow:5px 6px 0 rgba(241,138,72,.35);transform:rotate(1deg)}
+
+.map-embed{width:100%;height:340px;margin-top:26px;border:5px solid #fff;box-shadow:7px 8px 0 var(--turq);overflow:hidden;background:#e9e4d9}
+.map-embed iframe{display:block;width:100%;height:100%;border:0}
+
+.sample-notice{position:fixed;z-index:1000;left:0;right:0;bottom:0;min-height:36px;padding:9px 48px;text-align:center;background:rgba(43,33,27,.94);color:#fff;font-size:11px;font-weight:700;letter-spacing:.04em;backdrop-filter:blur(6px)}
+
+@media(max-width:700px){
+  body{padding-bottom:42px}
+  .site-header{padding-block:7px}
+  .brand{width:108px;height:46px;border-radius:13px}
+  .brand img{border-radius:9px}
+  footer img{width:150px}
+  .map-embed{height:280px;margin-top:22px;border-width:4px;box-shadow:5px 6px 0 var(--turq)}
+  .sample-notice{min-height:42px;padding:8px 12px;font-size:10px;display:grid;place-items:center}
+
+  /* Three favorites fill the mobile width without the previous tall empty gaps. */
+  .food-collage{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;min-height:0;margin:8px -10px 0;align-items:start}
+  .food{position:relative!important;inset:auto!important;width:auto!important;margin:0!important;display:flex;flex-direction:column;align-items:center}
+  .food img{width:100%;aspect-ratio:1;border-width:4px;box-shadow:4px 5px 0 var(--orange)}
+  .food-c img{box-shadow:4px 5px 0 var(--yellow)}
+  .food figcaption{position:static!important;width:auto!important;margin-top:12px;text-align:center!important}
+  .food figcaption b{font-size:.62rem;line-height:1.15;letter-spacing:.04em}
+  .food figcaption span{display:none}
+  .popular .section-note{text-align:center;margin-top:30px}
+}
