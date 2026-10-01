@@ -13,6 +13,7 @@
   <link rel="icon" href="assets/logo.jpg">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile-fix.css">
+  <link rel="stylesheet" href="calendar-fix.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -117,7 +118,19 @@
         <p>基本の営業時間は <strong>11:30–15:00</strong>。営業日は月により変わるため、お出かけ前に最新のカレンダーをご確認ください。</p>
         <a class="button instagram" href="https://www.instagram.com/enerie420/" target="_blank" rel="noopener">Instagramで最新情報を見る</a>
       </div>
-      <figure class="calendar"><img src="assets/calendar.jpg" alt="Enerie淡路店 2026年10月の営業日カレンダー"></figure>
+      <div class="calendar" role="group" aria-label="Enerie淡路店 2026年10月の営業日カレンダー">
+        <div class="calendar-head"><small>ENERIE AWAJI</small><strong>2026.10</strong><span>OPEN DAYS</span></div>
+        <div class="calendar-week" aria-hidden="true"><span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span>土</span><span>日</span></div>
+        <div class="calendar-grid">
+          <span class="empty"></span><span class="empty"></span><span class="empty"></span>
+          <span class="open">1<small>OPEN</small></span><span>2</span><span class="closed">3<small>休</small></span><span>4</span>
+          <span class="open">5<small>OPEN</small></span><span class="open">6<small>OPEN</small></span><span>7</span><span class="open">8<small>OPEN</small></span><span>9</span><span class="open">10<small>OPEN</small></span><span>11</span>
+          <span class="open">12<small>OPEN</small></span><span class="open">13<small>OPEN</small></span><span>14</span><span class="open">15<small>OPEN</small></span><span>16</span><span class="open">17<small>OPEN</small></span><span>18</span>
+          <span class="open">19<small>OPEN</small></span><span class="open">20<small>OPEN</small></span><span>21</span><span class="open">22<small>OPEN</small></span><span>23</span><span class="open">24<small>OPEN</small></span><span>25</span>
+          <span class="open">26<small>OPEN</small></span><span class="open">27<small>OPEN</small></span><span>28</span><span class="open">29<small>OPEN</small></span><span>30</span><span class="closed">31<small>休</small></span><span class="empty"></span>
+        </div>
+        <p class="calendar-note">色のついた日が営業日です</p>
+      </div>
     </section>
 
     <section class="access section" id="access">
